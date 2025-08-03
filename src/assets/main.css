@@ -1,0 +1,107 @@
+/* * {
+  padding: 0;
+  margin: 0;
+} */
+
+.app{
+  margin-top: 60px;
+  display: flex;
+}
+
+tr{
+  display: flex;
+}
+
+td {
+  width: 255px;
+  height: 640px;
+  padding: 1px;
+}
+
+.shadow {
+  border: 1px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.oneLift,.sumCon {
+  width: 242px;
+  height: 638px;
+  text-align: center;
+}
+
+
+.liftInner,.sumCon{
+  width: 202px;
+  height: 599px;
+  padding: 20px;
+}
+
+.sumCon {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pannel{
+  width: 200px;
+  height: 73px;
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.buttons{
+  /* margin: 0 30px 10px 33px; */
+  display: flex;
+  /* justify-content: center;
+  align-items: flex-start;
+  align-content: space-around; */
+  flex-wrap: wrap;
+  width: 200px;
+}
+
+.button{
+  display: flex;
+  margin: 0 30px 10px 33px;
+}
+
+.el-button{
+  width: 32px;
+  height: 32px;
+}
+
+.outerbox{
+  width: 94px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  margin: 0 1px 30px 3px;
+}
+
+.pannel .el-icon.active {
+  color: crimson !important;
+}
+
+.pannel span.active {
+  color: crimson !important; 
+}
+
+ .pannel .ring.active  {
+  animation: flash 2s ease;
+}
+
+@keyframes flash {
+  0% {
+    color: crimson;
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    color: crimson;
+    transform: rotate(180deg) scale(1.15);
+  }
+  100% {
+    color: crimson;
+    transform: rotate(360deg) scale(1);
+  }
+}
