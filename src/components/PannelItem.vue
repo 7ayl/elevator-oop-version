@@ -17,7 +17,41 @@
 </template>
 
 <style scoped>
-/* .active {
-  color: crimson;
-} */
+
+.pannel{
+  width: 200px;
+  height: 73px;
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pannel .el-icon.active {
+  color: crimson !important;
+}
+
+.pannel span.active {
+  color: crimson !important; 
+}
+
+ .pannel .ring.active  {
+  animation: flash 2s ease;
+}
+
+@keyframes flash {
+  0% {
+    color: crimson;
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    color: crimson;
+    transform: rotate(180deg) scale(1.15);
+  }
+  100% {
+    color: crimson;
+    transform: rotate(360deg) scale(1);
+  }
+}
 </style>
