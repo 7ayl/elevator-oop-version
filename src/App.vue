@@ -1,18 +1,17 @@
 <script setup lang="ts">
-import Pannel from './components/PannelItem.vue';
+import Pannel from './components/PanelItem.vue';
 import Buttons from './components/ButtonsItem.vue';
 import OutButtons from './components/OutButtons.vue';
-import { computed } from 'vue'; 
 import { useLiftStore } from './stores/lift'
 
 const liftStore = useLiftStore();
-
-const lifts = computed(() => liftStore.lifts)
+const lifts = liftStore.lifts; 
 
 </script>
 
 <template>
   <div class="app">
+    
     <table>
       <tbody>
         <tr>
