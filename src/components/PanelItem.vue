@@ -1,27 +1,38 @@
 <script setup lang="ts">
-import type { Lift } from '../stores/lift'
+import type { Lift } from '../stores/lift';
 const props = defineProps<{
-  liftData: Lift; 
+  liftData: Lift;
 }>();
 
-const lift = props.liftData
+const lift = props.liftData;
 </script>
 
 <template>
   <div class="pannel shadow">
-    <el-icon :size="20" class="ring" :class="{ active: lift?.ringActive.value }"><i-ep-WarningFilled /></el-icon>
-    <el-icon :class="{ active: lift?.direction.value === 'up'}"><i-ep-Top /></el-icon>
-    <span :class="{ active: lift?.doorStatus.value === 'open' } ">{{ lift?.nowFloor }}</span>
-    <el-icon :class="{ active: lift?.direction.value === 'down'}"><i-ep-Bottom /></el-icon>
-    <el-icon :size="20" class="ring" :class="{ active: lift?.ringActive.value }" ><i-ep-WarningFilled /></el-icon>
+    <el-icon :size="20" class="ring" :class="{ active: lift?.ringActive.value }"
+      ><i-ep-WarningFilled
+    /></el-icon>
+    <el-icon :class="{ active: lift?.direction.value === 'up' }"
+      ><i-ep-Top
+    /></el-icon>
+    <span :class="{ active: lift?.doorStatus.value === 'open' }">{{
+      lift?.nowFloor
+    }}</span>
+    <el-icon :class="{ active: lift?.direction.value === 'down' }"
+      ><i-ep-Bottom
+    /></el-icon>
+    <el-icon :size="20" class="ring" :class="{ active: lift?.ringActive.value }"
+      ><i-ep-WarningFilled
+    /></el-icon>
   </div>
 </template>
 
 <style scoped>
-.pannel{
+.pannel {
   width: 200px;
   height: 73px;
-  background-color: azure;
+  background-color: #909399b0;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,14 +40,14 @@ const lift = props.liftData
 }
 
 .pannel .el-icon.active {
-  color: crimson !important;
+  color: rgb(255, 52, 52);
 }
 
 .pannel span.active {
-  color: crimson !important; 
+  color: rgb(255, 58, 58);
 }
 
- .pannel .ring.active  {
+.pannel .ring.active {
   animation: flash 2s ease;
 }
 
