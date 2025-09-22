@@ -62,7 +62,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload src repository
-          path: './src'
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
