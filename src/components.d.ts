@@ -9,12 +9,10 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     ButtonsItem: typeof import('./components/ButtonsItem.vue')['default']
-    copy: typeof import('./components/WelcomeItem copy.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElIcon: typeof import('element-plus/es')['ElIcon']
     IEpArrowDownBold: typeof import('~icons/ep/arrow-down-bold')['default']
     IEpArrowUpBold: typeof import('~icons/ep/arrow-up-bold')['default']
-    IEpBell: typeof import('~icons/ep/bell')['default']
     IEpBellFilled: typeof import('~icons/ep/bell-filled')['default']
     IEpBottom: typeof import('~icons/ep/bottom')['default']
     IEpCaretLeft: typeof import('~icons/ep/caret-left')['default']
@@ -22,7 +20,6 @@ declare module 'vue' {
     IEpTop: typeof import('~icons/ep/top')['default']
     IEpWarningFilled: typeof import('~icons/ep/warning-filled')['default']
     OutButtons: typeof import('./components/OutButtons.vue')['default']
-    PannelItem: typeof import('./components/PannelItem.vue')['default']
-    WelcomeItem: typeof import('./components/WelcomeItem.vue')['default']
+    PanelItem: typeof import('./components/PanelItem.vue')['default']
   }
 }
