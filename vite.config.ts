@@ -15,6 +15,7 @@ const pathSrc = path.resolve(__dirname, 'src');
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/elevator-oop-version/', 
   plugins: [
     vue(),
     vueJsx(),
