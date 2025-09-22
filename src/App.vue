@@ -63,7 +63,7 @@ const lifts = liftStore.lifts;
   flex-direction: row; /* 确保水平排列 */
   flex-wrap: nowrap; /* 防止换行 */
   gap: 20px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start; /* 顶部对齐 */
   max-width: 100%;
   overflow-x: auto; /* 添加水平滚动以防内容过多 */
