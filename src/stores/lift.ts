@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia';
-import { shallowRef, ref, reactive, markRaw, ShallowRef } from 'vue';
+import { shallowRef, ref, reactive, markRaw } from 'vue';
 import type { LiftData } from '../types/type';
+import type { ShallowRef } from 'vue';
 
 // 电梯配置常量
 export const ELEVATOR_CONFIG = {
