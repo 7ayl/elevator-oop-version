@@ -135,6 +135,9 @@ const lifts = liftStore.lifts;
   .sumCon {
     width: 100%;
     max-width: 280px;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
   }
 
   .elevators-container {
